@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eduford-university</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="https://uniofeduford.netlify.app/images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="ri-arrow-left-circle-line" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="about.html" >ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="ri-menu-fill" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+    
+    <!-- ------- contact page --------->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.859046970946!2d7.03483137760586!3d4.794233482756018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd882f7271c1%3A0xb242954c9aec85de!2sEdufort%20High%20School!5e0!3m2!1sen!2s!4v1724080767331!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="ri-home-3-fill"></i>
+                    <span>
+                        <h4>XYZ Road, ABC Building</h4>
+                        <p>Newyork, england</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="ri-phone-fill"></i>
+                    <span>
+                        <h4>+92316-480373-0</h4>
+                        <p>Monday to Friday, 10:00AM to 06:00PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="ri-mail-fill"></i>
+                    <span>
+                        <h4>Email123@gmail.com</h4>
+                        <p>This email to contact us</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form>
+                    <input type="text" placeholder="Enter name" required>
+                    <input type="email" placeholder="Enter email" required>
+                    <input type="subject" placeholder="Enter subject" required>
+                    <textarea rows="8" placeholder="Your comment"></textarea>
+                    <button type="submit" class="hero-btn2">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+      <!-- ------- footer ------->
+
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university. We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p><br> 
+         <div class="icons">
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-linkedin-line"></i>
+            <i class="ri-whatsapp-fill"></i>
+         </div>
+         <br>
+         <h5>Made By: ABDUL SAMAD</h5>
+    </section>
+
+
+ <!-- ------- JavaScript for toggle Menu -------- -->
+ <script>
+    var navlinks = document.getElementById("navlinks");
+       function showMenu(){
+        navlinks.style.right ="0";
+       }
+       function hideMenu(){
+        navlinks.style.right ="-200px";
+       }
+</script>
+</body>
+</html>
